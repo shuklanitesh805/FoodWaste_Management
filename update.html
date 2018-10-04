@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Updation|Nitesh.com</title>
+	<link rel="icon" type="image/x-icon" href="img/r.png">
+	<style type="text/css">
+		*
+		{
+			margin:0;
+			font-family: sans-serif; 
+		}
+		.background
+		{	width: 1366px;
+                        height: 669px;
+			background-image:url('img/background.jpg');
+			background-size: cover;
+			z-index: -1;
+			filter: blur(3px);
+			position: absolute;
+		}
+		.form
+		{
+			height: 619px;
+			width: 465px;
+			background: rgba(187,187,187,0.7);
+			position: relative;
+			top: 25px;
+			left: 783px;
+			left: 465px;
+			color: white;
+			font-size: 15px;
+			font-weight: bold;	
+			position: absolute;
+		}
+		.form-p1
+		{	margin-top: 25px;
+			color: white;
+			font-size: 24px;
+			font-weight: bold;
+			margin-left: 25px; 
+		}
+		.form-p2
+		{
+			color: white;
+			font-size: 13px;
+			font-weight: bold;
+			margin-left: 25px;
+		}
+		.Name
+		{
+			margin-left: 25px;
+			float: left;
+		}
+		.txt1
+		{
+			width: 50px;
+			float: left;
+			margin-left: 40px;
+			font-size: 14px;
+			text-align: center;
+			
+		}
+		.txt2
+		{
+			width: 80px;
+			float: left;
+			margin-left: 5px;
+			font-size: 14px;
+			text-align: center;
+		
+		}
+		.txt3
+		{
+			width: 120px;
+			float: left;
+			margin-left: 5px;
+			font-size: 14px;
+			text-align: center;
+		
+		}
+		.txt4
+		{
+			margin-left: 51px;
+			width: 250px;
+			text-align: center;
+			font-size: 14px;
+		}
+		.txt5
+		{
+			margin-left: 146px;
+			width: 250px;
+			text-align: center;
+			font-size: 14px;
+		}
+		.txt6
+		{
+			margin-left: 146px;
+			width: 100px;
+			text-align: center;
+			font-size: 14px;
+			float: left;
+		}
+		.txt7
+		{
+			margin-left: 14px;
+			width: 100px;
+			text-align: center;
+			font-size: 14px;
+			float: left;
+		}
+		.txt8
+		{
+			width: 200px;
+			margin-left: 35px;
+			font-size: 14px;
+			text-align: center;
+			
+		}
+		.txt9
+		{
+			margin-left: 35px;
+			width: 200px;
+			text-align: center;
+			font-size: 14px;
+		}
+		.Submitbtn
+		{
+			height: 25px;
+			width: 100px;
+			border-radius:30px;
+			border-style: groove;
+			border: 1px groove red;
+			border-radius:20px;  
+		}
+		.cb
+		{
+			margin-left: 155px;
+			float: left;
+		}
+	</style>
+	<script type="text/javascript">
+		function Result()
+		{
+		var prefixx = document.getElementById('ABC').value;
+		var FName = document.getElementById('Fname').value;
+		var LName = document.getElementById('Lname').value;
+		var Address = document.getElementById('Add').value;
+		var CITY = document.getElementById('city').value;
+		var STATE = document.getElementById('state').value;
+		var ZIPCODE = document.getElementById('zipcode').value;
+		var MOBILE = document.getElementById('mobile').value;
+		var PASSWORD = document.getElementById('password').value;
+		var EMAIL = document.getElementById('email').value;
+                var pre = "Mr";
+                var prei = "Miss";
+		if(prefixx=='')
+		{
+			alert("Please Enter prefix As Mr. or Miss");
+			document.getElementById('ABC').focus();
+			return false;
+		}
+		if(prefixx != prei)
+		{  
+			alert('Please Enter prefix As Mr or Miss');
+			document.getElementById('ABC').focus();
+			return false;
+                }
+               
+		if(FName=='')
+		{
+			alert("Please Enter First Name");
+			document.getElementById('Fname').focus();
+			return false;
+		}
+		if(LName=='')
+		{
+			alert("Please Enter Last Name");
+			document.getElementById('Lname').focus();
+			return false;
+		}
+		if(Address=='')
+		{
+			alert("Please Enter Address");
+			document.getElementById('Add').focus();
+			return false;
+		}
+		if(CITY=='')
+		{
+			alert("Please Enter City");
+			document.getElementById('city').focus();
+			return false;
+		}
+		if(ZIPCODE=='')
+		{
+			alert("Please Enter Zipcode of your city");
+			document.getElementById('zipcode').focus();
+			return false;
+		}
+		if(STATE=='')
+		{
+			alert("Please Enter State");
+			document.getElementById('state').focus();
+			return false;
+		}
+		if(MOBILE=='')
+		{
+			alert("Please Enter Mobile Number");
+			document.getElementById('mobile').focus();
+			return false;
+		}
+		if(EMAIL=='')
+		{
+			alert("Please Enter Email");
+			document.getElementById('email').focus();
+			return false;
+		}
+		if(PASSWORD=='')
+		{
+			alert("Please Enter Password");
+			document.getElementById('password').focus();
+			return false;
+		}
+		alert("ThankYou For Registration");
+		}
+              
+	</script>
+</head>
+<body >
+	<div class="background"></div>
+	<div class="form">
+		<form method="POST" action="foodwaste.html">
+			<p class="form-p1">Updation Form</p>
+			<p class="form-p2">Please fill your correct information in the form below</p><br>
+			<hr style="width: 400px; color:gray; margin-left: 25px;"><br><br>
+			<p class="Name">Full Name <span style="color: red">*</span></p>
+			<input type="text" class="txt1" placeholder="Prefix" id="ABC" name="Prefix">
+			<input type="text" class="txt2" placeholder="First Name" id="Fname" name="FName">
+                        <input type="text" class="txt3" placeholder="Last Name" id="Lname" name="LName"><br><br><br><br>
+			<p class="Name">Address <span style="color: red">*</span></p>
+			<input type="text" class="txt4" placeholder="Street Address" id="Add" name="Address1"><br><br>
+			<input type="text" class="txt5" placeholder="Street Address line Two" name="Address2"><br><br>
+			<input type="text" class="txt6" placeholder="City" id="city" name="City">
+			<input type="text" class="txt7" placeholder="State" id="state" name="State"><br><br>
+                        <input type="Number" class="txt6" placeholder="Zipcode" id="zipcode" name="zipcode"><br><br><br><br>
+			<p class="Name">Mobile NO.<span style="color: red">*</span></p>
+                        <input type="Number" class="txt8" placeholder="8080257489" id="mobile" name="Mobile"><br><br><br>
+			<p class="Name">Email Add.<span style="color: red">*</span></p>
+			<input type="email" class="txt9" placeholder="example@mail.com" id="email" name="Email"><br><br>
+			<p class="Name">Password<span style="color: red">*&nbsp;</span></p>
+			<input type="Password" class="txt9" placeholder="***********" id="password" name="Password"><br><br><br><br>
+			
+			<center>
+				<a href="index.html"><input type="button" class="Submitbtn" value="Home"></a>
+				<input type="Submit" class="Submitbtn" value="Submit" onclick="javascript:return Result();">
+                 
+			</center>
+
+		</form>
+	</div>
+	
+</body>
+</html>
