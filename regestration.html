@@ -152,18 +152,7 @@
 		var PASSWORD = document.getElementById('password').value;
 		var EMAIL = document.getElementById('email').value;
 		var pre = 'Mr';
-		if(prefixx=='')
-		{
-			alert("Please Enter prefix As Mr. or Miss");
-			document.getElementById('ABC').focus();
-			return false;
-		}
-		if(prefixx!=pre)
-		{
-			alert('Please Enter prefix As Mr. or Miss');
-			document.getElementById('ABC').focus();
-			return false;
-		}
+		
 		if(FName=='')
 		{
 			alert("Please Enter First Name");
@@ -248,6 +237,7 @@
 			<input type="Checkbox" required="" class="cb"><p class="Name1" style="color: blue">Terms&Conditions</p><br><br>
 			<center>
 				<input type="Submit" class="Submitbtn" value="Submit" onclick="javascript:return Result();">
+				<a href="index.html"><input type="button" Class="Submitbtn" value="LOGIN"></a>
 			</center>
 
 		</form>
